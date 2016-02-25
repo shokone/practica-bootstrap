@@ -1,0 +1,71 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.header {
+  height: 5em;
+  width: 100%;
+  border: 2px black solid;
+  -moz-border: 2px black solid;
+  -webkit-border: 2px black solid;
+  -o-border: 2px black solid;
+  -ms-border: 2px black solid;
+  padding: 20px;
+}
+/* menu principal */
+.navbar {
+  width: 100%;
+  background-color: #009900;
+  padding: 20px;
+  list-style: none;
+}
+.menu ul {
+  list-style-type: none !important;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  border-bottom: 5px #009900 solid;
+}
+.menu ul li a:hover {
+  border-bottom: 5px black solid;
+}
+.menu ul > li {
+  float: left;
+}
+/* fin menu principal */
+.box {
+  border: 2px black solid;
+  -moz-border: 2px black solid;
+  -webkit-border: 2px black solid;
+  -o-border: 2px black solid;
+  -ms-border: 2px black solid;
+  box-shadow: 0 0 1px #000;
+  -moz-box-shadow: 0 0 1px #000;
+  -webkit-box-shadow: 0 0 1px #000;
+  -ms-box-shadow: 0 0 1px #000;
+  -o-box-shadow: 0 0 1px #000;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.slider {
+  width: 100%;
+}
