@@ -10,6 +10,7 @@
     <link href="estilo.less" rel="stylesheet" type="text/css" / <!-- CSS de Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,14 +22,14 @@
 <body>
     <div class="container">
         <!-- menu -->
-        <div class="navbar">
-            <div class="row">
+        <div class="navbar navbar-fixed-top">
                 <div class="menu">
+                    <a class="logo" href="index.html"><img src="images/logo_retina.png"/></a>
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Galer&iacute;a</a></li>
                         <li><a href="">Contacto</a></li>
+                        <li><a href="">Galer&iacute;a</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Inicio</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,9 +40,12 @@
         </div>
         
         <!-- slider -->
-        <div class="slider" id="slider">
-            <div class="row">
-                <div class="box">.col-md-10</div>
+        <div id="row slider-wrapper">
+            <div id="slider">
+                <a href=""><img src="images/slider/Marley_Udiscover_2.jpg"/><p>texto de prueba</p></a>
+                
+                <a href="javascript:void(null);" class="mas">&rsaquo;</a>
+                <a href="javascript:void(null);" class="menos">&lsaquo;</a>
             </div>
         </div>
         <!-- contenido -->
@@ -51,11 +55,14 @@
             <div class=" col-xs-6 col-md-4 box">.col-md-4</div>
         </div>
         <!-- footer -->
-        <div class="row">
+        <span class="borderFooter"></span>
+        <div class="row footer">
+
             <div class="col-xs-8 col-md-6 box">.col-md-6</div>
             <div class="col-xs-8 col-md-6 box">.col-md-6</div>
         </div>
     </div>
+    <script>/*sliderHome();*/</script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

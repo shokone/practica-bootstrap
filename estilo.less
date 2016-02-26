@@ -24,7 +24,7 @@ a{
 	-o-border: @arguments;
 	-ms-border: @arguments;
 }
-.boxRadius(@tam:10px){
+.boxRadius(@tam:10px, @tam2: 10px){
 	border-radius:@arguments;
 	-moz-border-radius:@arguments;
 	-ms-border-radius:@arguments;
@@ -38,16 +38,27 @@ a{
 	-ms-box-shadow: @arguments;
 	-o-box-shadow: @arguments;
 }
+.boxSizing(@x: border-box){
+	box-sizing: @arguments;
+	-moz-box-sizing: @arguments;
+	-o-box-sizing: @arguments;
+	-ms-box-sizing: @arguments;
+	-webkit-box-sizing: @arguments;
+}
 .header{
 	height:5em;
 	width:100%;
 	.boxBorder;
 	padding:@base-padding+10px;
 }
+.logo{
+	position: absolute;
+	top: 4px;
+}
 /* menu principal */
 .navbar{
 	width: @width;
-	background-color:#009900;
+	background-image:url('images/bg_header.png');
 	padding: @base-padding+10px;
 	list-style: none;
 }
@@ -61,13 +72,13 @@ a{
 			text-decoration: none;
 			padding: @base-padding @base-padding+5px;
 			display: block;
-			border-bottom:5px #009900 solid;
+			//border-bottom:5px #009900 solid;
 			&:hover{
-				border-bottom:5px black solid;
+				//border-bottom:5px black solid;
 			}
 		}
 		> li{
-			float: left;
+			float: right;
 		} 
 	}
 } 
@@ -79,7 +90,88 @@ a{
 	padding:@base-padding;
 	margin:@base-margin+10px;
 }
-.slider{
+/* inicio slider */
+#slider-wrapper{
+	position: relative;
 	width: @width;
+	max-width: @width;
+	margin: 0 auto;
+	padding: 0 @base-padding;
+	font-family: arial,sans-serif,tahoma;
+	font-size: 0;
+	height: 80%;
+	.boxSizing;
 }
+#slider{
+	position: relative;
+	width: @width;
+	padding-bottom: 50%;
+	overflow: hidden;
+	//.boxBorder(10px, #333);
+	.boxSizing;
+	.boxRadius(2%,2%);
+	> a{
+		position: absolute;
+		width: @width;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+	}
+	img{
+		width: @width;
+		max-width: 100%;
+		min-height:100%;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	p{
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;//eliminamos espacios en blanco de más
+		text-overflow: ellipsis;//acabamos el texto si no cabe en ...
+		width: 80%;
+		height: 18px;
+		margin: 0;
+		padding: 5px 0;
+		color: #eee;
+		background: #333;
+		font-size: 1em;
+		line-height: 1em;
+		text-align: center;
+	}
+	a.mas, a.menos {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		z-index: 5;
+		width: 1.8em;
+		min-height: 1.8em;
+		text-align: center;
+		line-height: 1.8em;
+		font-size: 1.8em;
+		color: white;
+		background: #333;
+		text-decoration: none;
+	}
+	a.mas{
+		left: 90%;
+	}
+}
+/* fin slider */
+/* inicio footer */
+.footer{
+	background-image: url('images/bg_texture_yellow.jpg');
+	clear: both;
+	bottom: 0;
+	width: @width;
 
+}
+.borderFooter{
+		background-image: url('images/bg_topborder.gif');
+	}
+/* fin footer */
