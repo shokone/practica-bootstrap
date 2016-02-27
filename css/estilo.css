@@ -1,0 +1,246 @@
+/* media querys */
+@media only screen and (max-width: 599px) {
+  .slider-wrapper .slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+  }
+  .slider-wrapper .slider img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -300px;
+  }
+}
+/* fin media querys */
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.header {
+  height: 5em;
+  width: 100%;
+  border: 2px black solid;
+  -moz-border: 2px black solid;
+  -webkit-border: 2px black solid;
+  -o-border: 2px black solid;
+  -ms-border: 2px black solid;
+  padding: 20px;
+}
+.logo {
+  position: absolute;
+  top: 4px;
+}
+/* menu principal */
+.navbar {
+  width: 100%;
+  background-image: url('../images/bg_header.png');
+  padding: 20px;
+  list-style: none;
+}
+.menu ul {
+  list-style-type: none !important;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.menu ul li a {
+  color: #291f16;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+.menu ul > li {
+  float: right;
+}
+/* fin menu principal */
+.box {
+  border: 2px black solid;
+  -moz-border: 2px black solid;
+  -webkit-border: 2px black solid;
+  -o-border: 2px black solid;
+  -ms-border: 2px black solid;
+  box-shadow: 0 0 1px #000;
+  -moz-box-shadow: 0 0 1px #000;
+  -webkit-box-shadow: 0 0 1px #000;
+  -ms-box-shadow: 0 0 1px #000;
+  -o-box-shadow: 0 0 1px #000;
+  border-radius: 10px 10px;
+  -moz-border-radius: 10px 10px;
+  -ms-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  padding: 10px;
+  margin: 20px;
+}
+/* inicio slider */
+#slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 0;
+  height: auto !important;
+  max-height: 80% !important;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#slider {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50%;
+  overflow: hidden;
+  height: 80%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+#slider > a {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+}
+#slider img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 40%;
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  left: 100%;
+  margin-left: -200%;
+}
+#slider p {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 18px;
+  margin: 0;
+  padding: 10px;
+  color: #eee;
+  background: #333;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+}
+#slider a.mas,
+#slider a.menos {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 5;
+  width: 1.8em;
+  min-height: 1.8em;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 1.8em;
+  color: white;
+  background: #333;
+  text-decoration: none;
+}
+#slider a.mas {
+  left: 90%;
+}
+/* fin slider */
+/* inicio footer */
+footer {
+  background-image: url('../images/bg_texture_yellow.jpg');
+  bottom: 0 !important;
+  clear: both;
+}
+.footer {
+  padding: 15px;
+}
+#socialicon {
+  background-repeat: no-repeat;
+  position: relative;
+  height: 34px;
+  width: 400px;
+  margin: 0 auto;
+}
+#socialicon li {
+  list-style: none;
+  height: 34px;
+  width: 34px;
+  float: left;
+}
+#socialicon li a {
+  height: 34px;
+  width: 34px;
+  display: block;
+}
+#socialicon #social1 {
+  background: url(../images/socialicons.png) 0px 0px;
+}
+#socialicon #social2 {
+  background: url(../images/socialicons.png) -32px 0px;
+}
+#socialicon #social3 {
+  background: url(../images/socialicons.png) -65px 0px;
+}
+#socialicon #social4 {
+  background: url(../images/socialicons.png) -99px 0px;
+}
+#socialicon #social5 {
+  background: url(../images/socialicons.png) -130px 0px;
+}
+#socialicon #social6 {
+  background: url(../images/socialicons.png) -164px 0px;
+}
+#socialicon #social7 {
+  background: url(../images/socialicons.png) -198px 0px;
+}
+#socialicon #social8 {
+  background: url(../images/socialicons.png) -233px 0px;
+}
+#socialicon #social1 a:hover {
+  background: transparent url(../images/socialicons.png) 0px -34px;
+}
+#socialicon #social2 a:hover {
+  background: transparent url(../images/socialicons.png) -32px -34px;
+}
+#socialicon #social3 a:hover {
+  background: transparent url(../images/socialicons.png) -65px -34px;
+}
+#socialicon #social4 a:hover {
+  background: transparent url(../images/socialicons.png) -99px 34px;
+}
+#socialicon #social5 a:hover {
+  background: transparent url(../images/socialicons.png) -130px 34px;
+}
+#socialicon #social6 a:hover {
+  background: transparent url(../images/socialicons.png) -164px 34px;
+}
+#socialicon #social7 a:hover {
+  background: transparent url(../images/socialicons.png) -198px 34px;
+}
+#socialicon #social8 a:hover {
+  background: transparent url(../images/socialicons.png) -233px 34px;
+}
+/* fin footer */
