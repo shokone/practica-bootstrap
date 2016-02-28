@@ -2,25 +2,30 @@
 @base-padding: 10px;
 @width: 100%;
 @text-decoration: none;
-/* media querys */
-@media only screen and (max-width: 599px){
-	.slider-wrapper .slider{
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		height: 550px;
-	}
-	.slider-wrapper .slider img{
-		position: absolute;
-		top: 0;
-		left: 50%;
-		margin-left: -300px;
-	}
-}
-/* fin media querys */
 body{
 	margin:0 auto;
 	width:100%;
+	background-color: #F0DFC8 !important;
+}
+@media (max-width: 600px){
+	/* inicio carrousel */
+	.carousel {
+		height: 300px !important;
+	}
+	.carousel .item {
+		height: 300px !important;
+	}
+	.carousel-inner > .item > img {
+		min-height: 300px !important;
+	}
+	/* fin carrousel */
+}
+.titulo{
+	color:#795C42 !important;
+	text-align: center;
+	font-style: italic;
+	padding-top: 20px;
+	font-weight: bold;
 }
 .container-fluid{
 	padding: 0 !important;
@@ -98,7 +103,7 @@ a{
 	color: #4A3221 !important;
 }
 .nav > li > a:hover{
-	
+
 }
 .navbar-default 
 .navbar-nav>.active>a, 
@@ -115,8 +120,11 @@ a{
 	padding:@base-padding;
 	margin:@base-margin+10px;
 }
+.galeria{
+	text-align: center;
+	padding-top: 15px;
+}
 /* inicio slider */
-
 #slider-wrapper{
 	position: relative;
 	width: @width;
@@ -125,10 +133,8 @@ a{
 	padding: 0 @base-padding;
 	font-family: arial,sans-serif,tahoma;
 	font-size: 0;
-	height: auto !important;
-	max-height: 80% !important;
+	max-height: 500px !important;
 	.boxSizing;
-	
 }
 #slider{
 	position: relative;
@@ -136,20 +142,20 @@ a{
 	text-align: center;
 	padding-bottom: 50%;
 	overflow: hidden;
-	height: 80%;
+	height: auto !important;
 	.boxSizing;
 	> a{
 		position: absolute;
 		width: @width;
 		top: 0;
 		left: 0;
-		min-height: 100%;
+		max-height: 500px !important;
 	}
 	img{
 		width: @width;
 		max-width: 100%;
 		min-width: 40%;
-		min-height:100%;
+		max-height:500px !important;
 		position: relative;
 		margin: 0;
 		padding: 0;
@@ -157,48 +163,42 @@ a{
 		left: 100%;
 		margin-left: -200%;
 	}
-	p{
-		position: absolute;
-		bottom: 5%;
-		left: 0;
-		display: block;
-		overflow: hidden;
-		white-space: nowrap;//eliminamos espacios en blanco de más
-		text-overflow: ellipsis;//acabamos el texto si no cabe en ...
-		width: 100%;
-		height: 18px;
-		margin: 0;
-		padding: 10px;
-		color: #eee;
-		background: #333;
-		font-size: 1em;
-		line-height: 1em;
-		text-align: center;
-	}
-	a.mas, a.menos {
-		position: absolute;
-		top: 50%;
-		left: 10px;
-		z-index: 5;
-		width: 1.8em;
-		min-height: 1.8em;
-		text-align: center;
-		line-height: 1.8em;
-		font-size: 1.8em;
-		color: white;
-		background: #333;
-		text-decoration: none;
-	}
-	a.mas{
-		left: 90%;
-	}
 }
 /* fin slider */
+/* inicio carrousel */
+.carousel {
+	height: 500px;
+	margin-bottom: 60px;
+}
+.carousel-caption {
+	z-index: 10;
+}
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 500px;
+}
+/* fin carrousel */
 /* pagina contacto */
 .contacto{
 	padding-top: 20px !important;		
 }
 /* fin pagina contacto */
+/* pagina discografia */
+.discografia{
+	div{
+		margin: 20px 30px;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+/* fin pagina discografia */
 /* inicio footer */
 footer{
 	background-image: url('../images/bg_texture_yellow.jpg');
@@ -248,3 +248,22 @@ footer{
 }
 
 /* fin footer */
+/* video */
+.responsive-video {
+	margin: 0 auto;
+	position: relative;
+	padding-top: 0px; 
+	overflow: hidden;
+	max-width: 700px;
+	max-height: 400px;
+}
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+	//position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	//height: 100%;
+}
+/* fin video */
