@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 a:hover {
   text-decoration: none;
 }
@@ -48,19 +52,23 @@ a:visited {
   padding: 20px;
   list-style: none;
 }
-.menu ul {
-  list-style-type: none !important;
-  font-weight: bold;
-  margin: 0 auto;
+.navbar-default {
+  background-color: #795C42 !important;
+  border-color: #795C42 !important;
+  background-image: url('../images/bg_header.png') !important;
 }
-.menu ul li a {
-  color: #291f16;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
+.navbar-nav > li > a {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
-.menu ul > li {
-  float: right;
+.nav > li > a {
+  padding: 5px 15px !important;
+  color: #4A3221 !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent !important;
 }
 /* fin menu principal */
 .box {
@@ -168,14 +176,21 @@ a:visited {
   left: 90%;
 }
 /* fin slider */
+/* pagina contacto */
+.contacto {
+  padding-top: 20px !important;
+}
+/* fin pagina contacto */
 /* inicio footer */
 footer {
   background-image: url('../images/bg_texture_yellow.jpg');
   bottom: 0 !important;
   clear: both;
+  width: 100%;
 }
 .footer {
   padding: 15px;
+  width: 100%;
 }
 #socialicon {
   background-repeat: no-repeat;

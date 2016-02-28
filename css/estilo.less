@@ -22,6 +22,10 @@ body{
 	margin:0 auto;
 	width:100%;
 }
+.container-fluid{
+	padding: 0 !important;
+	margin: 0 !important;
+}
 a{
 	&:hover{
 		text-decoration: @text-decoration;
@@ -78,26 +82,28 @@ a{
 	padding: @base-padding+10px;
 	list-style: none;
 }
-.menu{
-	ul{
-		list-style-type: none !important;
-		font-weight: bold;
-		margin: 0 auto;
-		li a{
-			color: #291f16;
-			text-decoration: none;
-			padding: @base-padding @base-padding+5px;
-			display: block;
-			//border-bottom:5px #009900 solid;
-			&:hover{
-				//border-bottom:5px black solid;
-			}
-		}
-		> li{
-			float: right;
-		} 
-	}
+.navbar-default{
+	background-color:#795C42 !important;
+	border-color:#795C42 !important;
+	background-image:url('../images/bg_header.png') !important;
+}
+.navbar-nav{
+	> li > a{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	} 
 } 
+.nav > li > a{
+	padding: 5px 15px !important;
+	color: #4A3221 !important;
+}
+.navbar-default 
+.navbar-nav>.active>a, 
+.navbar-default 
+.navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: transparent !important;
+}
 /* fin menu principal */
 .box{
 	.boxBorder;
@@ -185,14 +191,21 @@ a{
 	}
 }
 /* fin slider */
+/* pagina contacto */
+.contacto{
+	padding-top: 20px !important;		
+}
+/* fin pagina contacto */
 /* inicio footer */
 footer{
 	background-image: url('../images/bg_texture_yellow.jpg');
 	bottom: 0 !important;
 	clear: both;
+	width: @width;
 }
 .footer{
 	padding: 15px;
+	width: @width;
 }
 #socialicon{
 	background-repeat: no-repeat;

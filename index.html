@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Práctica Bootstrap</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css" />
-    <link href="css/estilo.less" rel="stylesheet" type="text/css"/>
+    <link href="css/estilo.less" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
@@ -20,27 +20,39 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="header" id="header">
             <!-- menu -->
-            <div class="navbar navbar-fixed-top">
-                    <div class="menu">
-                        <a class="logo" href="index.html"><img src="images/logo_retina.png"/></a>
-                        <ul>
-                            <li><a href="contacto.html">Contacto</a></li>
-                            <li><a href="galeria.html">Galer&iacute;a</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="logo" href="index.html"><img src="images/logo_retina.png" /></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-right">
+                        <ul class="nav navbar-nav">
                             <li><a href="index.html">Inicio</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="galeria.html">Galería</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </div>
+                    <!--/.nav-collapse -->
                 </div>
-            </div>
+            </nav>
         </div>
         <section>
             <!-- slider -->
-            <div id="row slider-wrapper">
+            <div id="row-fluid slider-wrapper">
                 <div id="slider">
-                    <a href=""><img src="images/slider/Marley_Udiscover_2.jpg"/><p>texto de prueba</p></a>
+                    <a href=""><img src="images/slider/Marley_Udiscover_2.jpg" />
+                        <p>texto de prueba</p>
+                    </a>
                     <a href="javascript:void(null);" class="mas">&rsaquo;</a>
                     <a href="javascript:void(null);" class="menos">&lsaquo;</a>
                 </div>
@@ -53,28 +65,47 @@
             </div>
              footer -->
         </section>
-        <footer class="row">
+        <footer class="container-fluid">
             <div class="footer">
                 <div>
                     <ul id="socialicon">
-                        <li id="social1"><a href="#" title="Facebook"></a></li>
-                        <li id="social2"><a href="#" title="Twitter"></a></li>
-                        <li id="social3"><a href="#" title="Instagram"></a></li>
-                        <li id="social4"><a href="#" title="Youtube"></a></li>
-                        <li id="social5"><a href="#" title="Pinterest"></a></li>
-                        <li id="social6"><a href="#" title="Spotify"></a></li>
-                        <li id="social7"><a href="#" title="mySpace"></a></li>
-                        <li id="social8"><a href="#" title="Google +"></a></li>
+                        <li id="social1">
+                            <a href="#" title="Facebook"></a>
+                        </li>
+                        <li id="social2">
+                            <a href="#" title="Twitter"></a>
+                        </li>
+                        <li id="social3">
+                            <a href="#" title="Instagram"></a>
+                        </li>
+                        <li id="social4">
+                            <a href="#" title="Youtube"></a>
+                        </li>
+                        <li id="social5">
+                            <a href="#" title="Pinterest"></a>
+                        </li>
+                        <li id="social6">
+                            <a href="#" title="Spotify"></a>
+                        </li>
+                        <li id="social7">
+                            <a href="#" title="mySpace"></a>
+                        </li>
+                        <li id="social8">
+                            <a href="#" title="Google +"></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
-    <script>/*sliderHome();*/</script>
+    <script>
+    /*sliderHome();*/
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
