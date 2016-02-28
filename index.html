@@ -47,23 +47,45 @@
             </nav>
         </div>
         <section>
-            <!-- slider -->
-            <div id="container-fluid slider-wrapper">
-                <div id="slider">
-                    <a href=""><img src="images/slider/Marley_Udiscover_2.jpg" />
-                    </a>
-                    <a href="javascript:void(null);" class="mas">&rsaquo;</a>
-                    <a href="javascript:void(null);" class="menos">&lsaquo;</a>
+            <!-- Carousel -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="first-slide" src="images/slider/Marley_Udiscover_2.jpg">
+                            </div>
+                            <div class="item">
+                                <img class="second-slide" src="images/slider/Bob-Marley-002-1440x900.jpg">
+                            </div>
+                            <div class="item">
+                                <img class="third-slide" src="images/slider/HERO-tourhistory71.jpg">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <!-- carousel -->
+            <div class="container noticiaPortada" >
+                <h1 class="titulo">Bob Marley</h1>
+                <h3 class="subtitulo">Reconociendo una Leyenda</h3>
+                <div class=" col-xs-10 col-md-12">
+                    <img src="images/wizkhalifarolling-jpg.jpg" align="left"/>
+                    <p>Robert Nesta Marley Booker (Nine Mile, Saint Ann, Jamaica, 6 de febrero de 1945-Miami, Florida, Estados Unidos, 11 de mayo de 1981), más conocido como Bob Marley, fue un músico, guitarrista y compositor jamaicano. Durante su carrera musical fue el líder, compositor y guitarrista de las bandas de ska, rocksteady y reggae The Wailers (1964-1974) y Bob Marley & The Wailers (1974-1981). Marley sigue siendo el más conocido y respetado intérprete de la música reggae y es acreditado por ayudar a difundir tanto la música de Jamaica como el movimiento rastafari (del que era un miembro comprometido) a una audiencia mundial. Entre sus mayores éxitos se encuentran los sencillos «I Shot the Sheriff», «No Woman, No Cry», «Jamming», «Redemption Song» y, junto a The Wailers, «Three Little Birds», así como el lanzamiento póstumo «Buffalo Soldier». El álbum recopilatorio Legend, lanzado en 1984, tres años después de su muerte, es el álbum de reggae más vendido de la historia con 10 discos de platino en los Estados Unidos y más de 20 millones de copias en todo el mundo.</p>
                 </div>
             </div>
-            <!-- contenido 
-            <div class="row" >
-                <div class="col-xs-6 col-md-4 box">.col-md-4</div>
-                <div class=" col-xs-6 col-md-4 box">.col-md-4</div>
-                <div class=" col-xs-6 col-md-4 box">.col-md-4</div>
-            </div>
-             footer -->
         </section>
+        <!-- footer -->
         <footer class="container-fluid">
             <div class="footer">
                 <div>
